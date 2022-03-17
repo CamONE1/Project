@@ -11,7 +11,10 @@ font-family: 'Gilroy';
 body {
     margin: 0;
     font-family: 'Gilroy';
-    background-image:  url(../img/pictures/01.jpg)
+    background-color: #0B1D26;
+    background-image:  url(./../img/BG/unsplash_1ow9zrlldJU.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
 }
 
 .test {
