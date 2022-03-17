@@ -2,3 +2,20 @@
 font-family: 'Playfair Display', serif;
 font-family: 'Gilroy';
 */
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Gilroy';
+    background-image:  url(../img/pictures/01.jpg)
+}
+
+.test {
+    background-color: aquamarine;
+    width: 200px;
+    height: 3200px;
+}
