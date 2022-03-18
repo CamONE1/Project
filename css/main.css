@@ -21,7 +21,7 @@ body {
 /* BASE */
 
 .container-wide {
-    width: 1790px;
+    max-width: 1790px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -82,6 +82,8 @@ body {
 }
 
 .account {
+    position: relative;
+    padding-left: 32px;
     font-weight: 700;
     font-size: 18px;
     text-decoration: none;
@@ -91,6 +93,18 @@ body {
 
 .account:hover {
     color: #FBD784;
+}
+
+.account::before {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    background-image: url(./../img/icones/cart.svg);
 }
 
 
@@ -159,7 +173,7 @@ body {
 
 .hero-scroll::after {
     display: block;
-    content: "";
+    content: '';
     position: absolute;
     right: 0;
     top: 50%;
@@ -286,7 +300,6 @@ body {
 .footer-row {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .footer-copyright {
@@ -299,6 +312,7 @@ body {
 }
 
 .footer-copyright-desc {
+    margin-top: 0;
     max-width: 303px;
     font-style: normal;
     font-weight: 700;
@@ -324,7 +338,6 @@ body {
 
 .footer-nav {
     max-width: 200px;
-
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -333,6 +346,7 @@ body {
 }
 
 .footer-nav-title {
+    margin-top: 0;
     margin-bottom: 24px;
     font-style: normal;
     font-weight: 700;
