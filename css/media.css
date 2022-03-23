@@ -67,7 +67,7 @@
     }
 
     .hero-title {
-        font-size: 38px;
+        font-size: 48px;
     }
     
     .hero-category {
@@ -88,6 +88,7 @@
     .article,
     .article:nth-child(2n) {
         flex-direction: column-reverse;
+        align-items: flex-start;
         margin-bottom: 100px;
     }
 
@@ -96,13 +97,17 @@
     }
 
     .article-img {
-        max-width: 100%;
+        max-width: 320px;
         width: 100%;
         margin-bottom: 75px;
     }
 }
 
 @media (max-width: 560px) {
+    .hero-title {
+        font-size: 44px;
+    }
+    
     .footer-nav-wrapper {
         flex-direction: column;
     }
