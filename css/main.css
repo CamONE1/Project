@@ -8,15 +8,20 @@ font-family: 'Gilroy';
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth; 
+}
+
+
 body {
     margin: 0;
     font-family: 'Gilroy';
-    background-color: #0B1D26;
-    background-image: linear-gradient(135deg, #0B1D26, transparent 17%),
-    linear-gradient(180deg, rgba(11, 29, 38, 0) 8%, #0B1D26 27%), url(./../img/BG/unsplash_1ow9zrlldJU.jpg);
+    background-color: #06161f;
+    background-image: url(./../img/BG/unsplash_1ow9zrlldJU.jpg);
     background-size: 100% auto;
     background-repeat: no-repeat;
-    color: #fff
+    color: #fff;
+    scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -27,6 +32,7 @@ img {
     display: block;
     max-width: 100%;
 }
+
 
 /* BASE */
 
@@ -105,10 +111,6 @@ img {
     transition: color 0.2s ease-in;
 }
 
-.account:hover {
-    color: #FBD784;
-}
-
 .account::before {
     display: block;
     content: '';
@@ -119,6 +121,10 @@ img {
     width: 24px;
     height: 24px;
     background-image: url(./../img/icones/cart.svg);
+}
+
+.account:hover {
+    color: #FBD784;
 }
 
 .nav-button {
@@ -262,7 +268,7 @@ img {
     font-size: 88px;
     line-height: 1.136;
     text-transform: capitalize;
-    color: #FFFFFF;
+    color: #fff;
 }
 
 .hero-scroll {
@@ -272,7 +278,7 @@ img {
     font-weight: 700;
     font-size: 18px;
     line-height: 1.222px;
-    color: #FFFFFF;
+    color: #fff;
 }
 
 .hero-scroll::after {
@@ -323,7 +329,7 @@ img {
     font-weight: 700;
     font-size: 240px;
     line-height: 1;
-    color:  rgba(255, 255, 255, 0.1);
+    color:  rgba(255, 255, 255, 0.10);
 }
 
 .article-subtitle {
@@ -357,7 +363,7 @@ img {
     font-weight: 500;
     font-size: 64px;
     line-height: 1.2;
-    color: #FFFFFF;
+    color: #fff;
     }
 
 .article-text p {
@@ -366,7 +372,7 @@ img {
     font-weight: 700;
     font-size: 18px;
     line-height: 1.777;
-    color: #FFFFFF;
+    color: #FFF;
 }
 
 .article-read-more {
@@ -450,7 +456,7 @@ img {
     font-weight: 500;
     font-size: 18px;
     line-height: 1.777;
-    color: #FFFFFF;
+    color: #FFF;
 }
 
 .footer-nav-title {
@@ -481,7 +487,7 @@ img {
 
 .footer-nav a {
     position: relative;
-    color: #FFFFFF;
+    color: #fff;
     text-decoration: none;
     padding-bottom: 5px;
 }
